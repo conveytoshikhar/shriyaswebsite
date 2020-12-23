@@ -1,55 +1,83 @@
 <html>
+
 <head>
-<style>
-	html,body{
-		margin: 0;
-		 background-image: url("https://i.ibb.co/d5X97nh/black-sequin-embellished-tassel-cape-4.jpg");background-repeat: no-repeat; background-attachment: fixed;background-position: center; background-size: cover;
-	width: 100vw;
-	height: 100vh;
-	}
-.header 
-	{
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translateX(-50%) translateY(-50%);
-	}
-	h2{
-		color: deeppink;
-		text-align: center;
-		font-size: 10vw;
-		font-family: sans-serif;
-		margin-bottom: 25px;
-		animation: change 10s infinite}
-		
+	<style>
+		html,
+		body {
+			background-image: url("https://i.ibb.co/d5X97nh/black-sequin-embellished-tassel-cape-4.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+			display: flex;
+		}
+
+		.main {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100vw;
+			height: 100vh;
+			flex-direction: column;
+		}
+
+		h2 {
+			color: deeppink;
+			text-align: center;
+			font-size: 120px;
+			font-family: sans-serif;
+			animation: change 10s infinite
+		}
+
 		@keyframes change {
-		0%{ color: deeppink;}
-		25%{color: white;}
-		50%{color: pink;}
-		75%{color:deeppink;}
-		100%{color:white;}
-	}
-	.button1 {
-  background-color: deeppink;
-  color: white;
-  border: 2px solid deeppink; 
-		text-align: center;
-		font-family: sans-serif;
-		text-decoration-line: none;
-		font-size: 2.5vw;
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-}
-	
-</style>	
+			0% {
+				color: deeppink;
+			}
+
+			25% {
+				color: white;
+			}
+
+			50% {
+				color: pink;
+			}
+
+			75% {
+				color: deeppink;
+			}
+
+			100% {
+				color: white;
+			}
+		}
+
+		.button1 {
+			background-color: deeppink;
+			color: white;
+			border: 2px solid deeppink;
+			border-radius: 8px;
+			text-align: center;
+			font-family: sans-serif;
+			text-decoration-line: none;
+			font-size: 2.5vw;
+			padding: 12px;
+			width: 220px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+		}
+	</style>
 </head>
-	
+
 <body>
-	<div class="header" style="text-align:center">
+	<div class="main">
 		<h2>APRIL SOURCING</h2>
-        <a href="./homegrid.html" class="button1">Explore</a>
-    </div>
+		
+		<a href="./home.html" class="button1">Explore</a>
+	</div>
+
 </body>
+
 </html>
